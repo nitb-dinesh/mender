@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".handyman.activity.EstimateJobActivity"
+    tools:showIn="@layout/activity_job_detailswith_fab">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titletv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Job Estimate"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text_color"
+            android:textSize="30sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/descriptiontv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="7dp"
+            android:text="Please select a time frame to complete this project"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnfirstoption"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/sharpcorners"
+                android:elevation="8dp"
+                android:text="1 - 2 \n hours"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/primary_text_color"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/btnsecondoption"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/sharpcorners"
+                android:elevation="8dp"
+                android:text="2 - 4 \n hours"
+                android:textColor="@color/primary_text_color"
+                android:textSize="26sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnthirdoption"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/sharpcorners"
+                android:elevation="8dp"
+                android:text="4 - 6 \n hours"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/primary_text_color"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/btnfourthoption"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/sharpcorners"
+                android:elevation="8dp"
+                android:text="6+ \n hours"
+                android:textColor="@color/primary_text_color"
+                android:textSize="26sp" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/jobdetailsbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Job Details"
+            android:background="@drawable/sharpcorners"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:elevation="8dp"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

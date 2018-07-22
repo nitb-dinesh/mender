@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:wheel="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:tabIndicatorColor="@android:color/white"
+            app:tabIndicatorHeight="3dp" />
+
+        <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/tabs"-->
+        <!--style="@style/AppTabLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--app:tabGravity="fill"-->
+        <!--app:tabIndicatorHeight="48dp"-->
+        <!--app:tabMode="fixed"-->
+        <!--app:tabTextAppearance="@style/AppTabTextAppearance" />-->
+
+        <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/tabs"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="48dp"-->
+        <!--android:background="@color/colorAccent"-->
+        <!--app:tabIndicatorHeight="48dp"-->
+        <!--app:tabIndicatorColor="@color/red_pending_job"-->
+        <!--/>-->
+
+        <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/tabs"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--app:tabTextAppearance="@style/AppTabTextAppearance"-->
+        <!--style="@style/AppTabLayout"-->
+        <!--app:tabGravity="fill"-->
+        <!--app:tabMode="fixed" />-->
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <TextView
+        android:id="@+id/posted_jobs"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="Posted Jobs"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="27dp"
+        android:background="@color/colorAccent"
+        android:backgroundTint="@color/colorAccent" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_requests_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/colorPrimary"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_rel"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+        android:layout_marginBottom="1dp">
+
+        <VideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/hire_handyman"
+            style="@style/mainButtons"
+            android:text="Hire Handyman"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/create_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/add"
+        android:visibility="gone"
+        app:backgroundTint="@color/colorAccent" />
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/progress_wheel"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        wheel:matProg_barColor="#2ec4b6"
+        wheel:matProg_progressIndeterminate="true" />
+
+    <TextView
+        android:id="@+id/welcometext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Welcome to your Mender home screen"
+        android:textColor="@color/black"
+        android:textSize="21sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/descriptiontext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="When you post a job, it will be put here, on your home page. you can check the status of your job and the pay the balance when the job has finished."
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:visibility="gone" />
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+    <!--<Button--><!--android:id="@+id/newRequest"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginBottom="10dp"--><!--android:paddingLeft="20dp"--><!--android:paddingRight="20dp"--><!--android:layout_alignParentBottom="true"--><!--android:layout_centerHorizontal="true"--><!--android:background="@drawable/button_background_white"--><!--android:text="Create Request"--><!--android:textColor="@color/backgroundtop"--><!--android:textSize="16sp" />-->
+
+    <!--<Button--><!--android:id="@+id/welcome_screen"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginBottom="10dp"--><!--android:paddingLeft="20dp"--><!--android:paddingRight="20dp"--><!--android:layout_above="@id/newRequest"--><!--android:layout_centerHorizontal="true"--><!--android:background="@drawable/button_background_white"--><!--android:text="Welcome Coordinator"--><!--android:textColor="@color/backgroundtop"--><!--android:textSize="16sp" />-->
+
+    <!--<Button--><!--android:id="@+id/timer"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginBottom="10dp"--><!--android:paddingLeft="20dp"--><!--android:paddingRight="20dp"--><!--android:layout_above="@id/welcome_screen"--><!--android:layout_centerHorizontal="true"--><!--android:background="@drawable/button_background_white"--><!--android:text="Timer Screen"--><!--android:textColor="@color/backgroundtop"--><!--android:textSize="16sp" />-->

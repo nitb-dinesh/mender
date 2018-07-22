@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="available_for_work">Available for work</string>
+    <string name="msg_subscribed">handyman topic subscribed</string>
+    <string name="msg_subscribe_failed">Handyman subscribe failed</string>
+</resources>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.handyman.mender">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="com.company.app.fileprovider.READ" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <permission
+        android:name="com.app.david.mender.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.example.david.mender.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permissions.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".misc.MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Mender"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity android:name=".myapp.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".common.utils.GenericFileProvider"
+            android:authorities="${applicationId}.com.app.handyman.mender"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".myapp.onboarding.WelcomeOneAvtivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myapp.onboarding.WelcomeTwoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myapp.onboarding.WelcomeThreeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".myapp.onboarding.WelcomeFourActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.activity.HomeActivity"
+            android:label="Mender"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".handyman.activity.ApplyAsHandymanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.activity.SignUp"
+            android:label="@string/title_activity_second"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.activity.EditProfileActivity"
+            android:label="@string/title_activity_second"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.activity.RaiseDisputeActivity"
+            android:label="@string/title_activity_second"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".common.activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".common.activity.ForgotPasswordActivity"
+            android:label="@string/forgot_password"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".handyman.activity.HandymanRequestsActivity"
+            android:parentActivityName=".common.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".handyman.activity.DeclinedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".handyman.activity.EnRouteActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".handyman.activity.OngoingJobActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".misc.WelcomeCoordinator"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".handyman.activity.ConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".handyman.activity.EnterReceiptsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".misc.ConfirmRequest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".handyman.activity.TimerTestNewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".handyman.activity.EndJobActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCxILQ9dSENEu8afaMytma35gLGFLeNahI" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".handyman.activity.ReceiptActivity"
+            android:label="@string/title_activity_receipt" />
+        <activity
+            android:name=".user.activity.CreateNewRequestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.activity.AddDetailsToNewRequestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".handyman.activity.NewJobRequestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".misc.AboutUs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".handyman.activity.MyJobDetailsActivity"
+            android:parentActivityName=".common.activity.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".user.activity.RequestDetailsActivity"
+            android:parentActivityName=".common.activity.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".handyman.activity.OpenJobDetailsActivity"
+            android:parentActivityName=".common.activity.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".misc.PaymentActivity"
+            android:parentActivityName=".common.activity.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".handyman.activity.StartJobActivity"
+            android:parentActivityName=".common.activity.HomeActivity"
+            android:screenOrientation="portrait">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <!-- File Providers -->
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <!-- Services -->
+        <service android:name=".common.utils.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".common.utils.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name=".common.utils.MyInstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- <service android:name="com.app.david.mender.MyInstanceIDListenerService"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.firebase.INSTANCE_ID_EVENT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+
+        <activity
+            android:name=".misc.Bidding"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".misc.ReviewClientDialog"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".misc.ReviewContractorDialog"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".misc.ReviewDisplay"
+            android:screenOrientation="portrait" />
+        <activity android:name=".handyman.activity.AddMaterialPurchaseDetailsActivity" />
+        <activity android:name=".common.activity.LearnMoreActivity" />
+        <activity
+            android:name=".handyman.activity.EstimateJobActivity"
+            android:label="@string/title_activity_job_detailswith_fab"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

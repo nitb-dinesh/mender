@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include
+            android:visibility="visible"
+            android:id="@+id/lin"
+            layout="@layout/toolbar" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/back_arrow"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+
+        <ImageView
+            android:id="@+id/edit_request"
+            android:layout_gravity="center"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/ic_edit_white_48dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/customToolbar"
+        android:background="@color/colorAccent"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Job Details"
+            android:textColor="@color/primary_light_text_color"
+            android:textSize="20sp">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/toolbarRL">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewJob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:text="Job :"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtJobTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:hint=""
+                android:paddingLeft="20dp"
+                android:textColor="@color/primary_text_color"
+                android:textColorHint="@color/primary_hint_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Description:"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/txtJobDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:hint=""
+                android:paddingLeft="20dp"
+                android:textColor="@color/primary_text_color"
+                android:textColorHint="@color/primary_hint_color"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/textViewLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Location (Address):"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:hint=""
+                android:paddingLeft="20dp"
+                android:textColor="@color/primary_text_color"
+                android:textColorHint="@color/primary_hint_color"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/zipcodetxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Zipcode :"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/zipcodeTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:hint=""
+                android:paddingLeft="20dp"
+                android:textColor="@color/primary_text_color"
+                android:textColorHint="@color/primary_hint_color"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+
+
+            <TextView
+                android:id="@+id/phoneNotxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Phone Number :"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/PhoneNoTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:hint=""
+                android:paddingLeft="20dp"
+                android:textColor="@color/primary_text_color"
+                android:textColorHint="@color/primary_hint_color"
+                android:textSize="16sp" />
+
+
+
+            <TextView
+                android:id="@+id/managerNametxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Property Manager Name :"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/managerNameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:hint=""
+                android:paddingLeft="20dp"
+                android:textColor="@color/primary_text_color"
+                android:textColorHint="@color/primary_hint_color"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/managertxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Phone Number:"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/managerNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:hint=""
+                android:paddingLeft="20dp"
+                android:textColor="@color/primary_text_color"
+                android:textColorHint="@color/primary_hint_color"
+                android:textSize="16sp" />
+
+
+
+
+            <TextView
+                android:id="@+id/textViewStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:text="Job Status:"
+                android:paddingLeft="5dp"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/job_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:text="Pending"
+                android:textColor="@color/primary_text_color"
+                android:textColorHint="@color/primary_hint_color"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textViewAssigned"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="5dp"
+                android:text="Assigned to:"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/assigned_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:text="Unassigned"
+                android:textColor="@color/primary_text_color"
+                android:textColorHint="@color/primary_hint_color"
+                android:textSize="16sp" />
+            <HorizontalScrollView
+                android:id="@+id/hsv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/add_camera"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="0"
+                android:background="@color/colorPrimary"
+                android:fillViewport="true"
+                android:measureAllChildren="false"
+                android:scrollbars="none">
+
+
+            </HorizontalScrollView>
+
+
+
+
+            <Button
+                android:id="@+id/set_reminder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Set Appointment"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/primary_text_color"
+                android:background="@drawable/sharpcorners"
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/raise_dispute"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dispute"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/primary_text_color"
+                android:background="@drawable/sharpcorners"
+                android:padding="10dp"/>
+
+
+
+
+
+            <!--<Button-->
+            <!--android:id="@+id/make_payment"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:background="@drawable/sharpcorners"-->
+            <!--android:visibility="gone"-->
+            <!--android:elevation="24dp"-->
+            <!--android:text="Make Payment"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textColor="@color/colorAccent" />-->
+
+            <Button
+                android:id="@+id/cancel_job"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/sharpcorners"
+                android:elevation="24dp"
+                android:text="Cancel Job"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text_color"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

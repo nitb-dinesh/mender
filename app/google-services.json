@@ -1,0 +1,176 @@
+{
+  "project_info": {
+    "project_number": "91100559628",
+    "firebase_url": "https://mender-49a62.firebaseio.com",
+    "project_id": "mender-49a62",
+    "storage_bucket": "mender-49a62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91100559628:android:b6f905b6bbb96c78",
+        "android_client_info": {
+          "package_name": "com.app.david.mender"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91100559628-hpucka3lgf7th4d97khmmhb7p7cctach.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.david.mender",
+            "certificate_hash": "9583371a5e0f015a34e7913611abab54019d2d78"
+          }
+        },
+        {
+          "client_id": "91100559628-sb25d1o0mj14vipd6lohv6fssji74pet.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "91100559628-sb25d1o0mj14vipd6lohv6fssji74pet.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDck9qHUEHX5Bw6cOWuy7TDttUhlSrvEpo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91100559628-sb25d1o0mj14vipd6lohv6fssji74pet.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "91100559628-senrfnd2s2gf48o5s5gknd5f3bgmtt20.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.david.handyman.services.Mender"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91100559628:android:5a5e09cc33cf6dbe",
+        "android_client_info": {
+          "package_name": "com.app.handyman.mender"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91100559628-ktvkeip4p3337bavti5i18d516fgi053.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.handyman.mender",
+            "certificate_hash": "9583371a5e0f015a34e7913611abab54019d2d78"
+          }
+        },
+        {
+          "client_id": "91100559628-sb25d1o0mj14vipd6lohv6fssji74pet.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "91100559628-sb25d1o0mj14vipd6lohv6fssji74pet.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDck9qHUEHX5Bw6cOWuy7TDttUhlSrvEpo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91100559628-sb25d1o0mj14vipd6lohv6fssji74pet.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "91100559628-senrfnd2s2gf48o5s5gknd5f3bgmtt20.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.david.handyman.services.Mender"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91100559628:android:12ada3b525747d8d",
+        "android_client_info": {
+          "package_name": "com.example.david.mender"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91100559628-pgeq2e97sdhhdudh7o7lvqo3bj0r8mrp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.david.mender",
+            "certificate_hash": "ba05bf1c24d24d9198e42f99821a1c2f2b775166"
+          }
+        },
+        {
+          "client_id": "91100559628-sb25d1o0mj14vipd6lohv6fssji74pet.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "91100559628-sb25d1o0mj14vipd6lohv6fssji74pet.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDck9qHUEHX5Bw6cOWuy7TDttUhlSrvEpo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91100559628-sb25d1o0mj14vipd6lohv6fssji74pet.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "91100559628-senrfnd2s2gf48o5s5gknd5f3bgmtt20.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.david.handyman.services.Mender"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

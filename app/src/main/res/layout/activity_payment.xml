@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.stripe.android.view.CardInputWidget
+        android:id="@+id/card_input_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_above="@+id/btnPay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="212dp" />
+
+    <Button
+        android:id="@+id/btnGenerateCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_input_widget"
+        android:text="Generate Token"
+        android:textColor="@color/primary_text_color"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnSaveCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Card"
+        android:textColor="@color/primary_text_color"
+        android:visibility="visible"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/sharpcorners"
+        android:layout_marginBottom="34dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/btnPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sharpcorners"
+        android:text="Pay"
+        android:textColor="@color/primary_text_color"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_above="@+id/btnSaveCustomer"
+        android:layout_toRightOf="@+id/btnGenerateCard"
+        android:layout_toEndOf="@+id/btnGenerateCard"
+        android:layout_marginBottom="25dp" />
+
+    <Button
+        android:id="@+id/btnPayWithCustomer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnPay"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/primary_text_color"
+        android:layout_marginRight="30dp"
+        android:text="Pay with Saved Customer"
+        android:visibility="gone" />
+
+</RelativeLayout>

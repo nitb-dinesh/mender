@@ -1,0 +1,337 @@
+<resources>
+    <string name="app_name">Mender</string>
+    <string name="welcome_to_mender">Welcome to Mender</string>
+    <string name="button">Button</string>
+    <string name="click_me">Click me</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="mender">Mender</string>
+    <string name="you_made_a_second_page">You made a second page!</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!--string array for spinner in SignUp Activity -->
+
+    <string name="signup">MyAndroidApp</string>
+    <string name="country_prompt">Choose a State</string>
+
+    <string-array name="state_arrays">
+        <item>WA</item>
+        <item>HA</item>
+    </string-array>
+
+    <!--About Us Strings-->
+    <string name="What_we_do"></string>
+
+    <!-- Icon Strings -->
+
+    <!--//https://linearicons.com/free-->
+    <string name="icon_email">&#xe818;</string>
+    <string name="icon_lock">&#xe80f;</string>
+    <string name="icon_pencil">&#xe802;</string>
+    <string name="icon_phone">&#xe830;</string>
+    <string name="icon_location">&#xe833;</string>
+    <string name="icon_book">&#xe828;</string>
+    <string name="icon_pushpin">&#xe832;</string>
+    <string name="icon_hourglass">&#xe85f;</string>
+    <string name="icon_calendar">&#xe836;</string>
+    <string name="icon_map">&#xe834;</string>
+    <string name="icon_user">&#xe82a;</string>
+    <string name="icon_apartment">&#xe801;</string>
+    <string name="icon_home">&#xe800;</string>
+    <string name="icon_hint">&#xe87d;</string>
+    <string name="icon_smartphone">&#xe83a;</string>
+    <string name="icon_printer">&#xe81c;</string>
+
+    <!-- Dashed Strike Strings -->
+    <string name="dashed_strike">Android Dash Line</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="back">Back</string>
+    <string name="register">Register</string>
+    <string name="address">Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="register1">Register</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="city_state">City, State</string>
+    <string name="email_address1">Email Address</string>
+    <string name="password">Password</string>
+    <string name="register2">Register</string>
+    <string name="register_here">Register Here</string>
+    <string name="email_Address">Email Address</string>
+    <string name="passWord">Password</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="sign_in">Sign In</string>
+    <string name="user_login">User Login</string>
+    <string name="login">login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="log_in">Log In</string>
+    <string name="choose_file">Choose File</string>
+    <string name="upload_file">Upload file</string>
+    <string name="available">Available</string>
+    <string name="unavailable">Unavailable</string>
+    <string name="togglebutton">ToggleButton</string>
+    <string name="availability">Availability</string>
+    <string name="current_jobs">Current Jobs:</string>
+    <string name="customers_in_area">Customers In Area:</string>
+    <string name="handymen_online">Handymen Online:</string>
+    <string name="title_activity_receipt">Receipt</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_availability">Availability</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="pick_file">Pick File</string>
+    <string name="upload">Upload</string>
+    <string name="take_picture">Take Picture</string>
+    <string name="edit_receipts">Edit Receipts</string>
+    <string name="be_sure_that_the_picture_is_easy_to_read_and_if_possible_includes_the_parts_listed_on_the_receipt">Be sure that the picture is easy to read and if possible, includes the parts listed on the receipt.</string>
+    <string name="edit_receipts1">Edit Receipts</string>
+    <string name="cannotinvokecamerapermission">Unable to invoke camera permission.</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="create_request">Create Request</string>
+    <string name="home">Home</string>
+    <string name="about_us">About Us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="share_app">Share App</string>
+    <string name="openDrawer">Open</string>
+    <string name="closeDrawer">Close</string>
+    <string name="create_request1">Create Request</string>
+    <string name="add_request">Add Request</string>
+    <string name="address1">Address</string>
+    <string name="admin">Admin</string>
+    <string name="job_description">Job Description</string>
+    <string name="job_title">Job Title</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+    <string name="client">Client</string>
+    <string name="handyman">Handyman</string>
+    <string name="select_file">Select File</string>
+    <string name="camera_permission_granted">Camera Permision Granted!</string>
+    <string name="allow_storage_permission">Allow Storage Permission</string>
+    <string name="storage_permission_granted">Storage Permission Granted</string>
+    <string name="allow_camera_permission">Allow Camera Permission</string>
+    <string name="location">Location</string>
+    <string name="end_current_job">End Current Job</string>
+    <string name="please_rate_your_experience_with_the_customer">Please rate your experience with the customer.</string>
+    <string name="phone_number1">Phone Number</string>
+    <string name="email_address2">Email Address</string>
+    <string name="title_activity_calendar">Calendar</string>
+    <string name="start_job">Start Job</string>
+    <string name="end_job">End Job</string>
+    <string name="basic_information">Basic Information</string>
+    <string name="let_s_get_some_basic_info_from_you_to_create_an_account">Let\'s get some Basic info from you to create an account.</string>
+    <string name="city">City</string>
+    <string name="now_lets_get_an_address_for_your_project_this_will_be_your_default_address_you_wil_be_able_to_add_other_addresses_later">Now lets get an address for your project. This will be your default address. You wil be able to add other addresses later.</string>
+    <string name="now_we_need_your_billing_address">Now we need your billing address.</string>
+    <string name="state">State</string>
+    <string name="Continue">Continue</string>
+    <string name="create_account">Create Account</string>
+    <string name="next">Next</string>
+    <string name="skip">SKIP</string>
+
+
+    //Onboarding Strings
+
+    <string name="slide_1_title">WELCOME TO MENDER!</string>
+    <string name="slide_1_desc">This apps lets users look for handyman\'s nearby to help them with problems they are facing.</string>
+
+    <string name="slide_2_title">CREATING A REQUEST</string>
+    <string name="slide_2_desc">Simply write a title, description, provide contact information, upload a photo of the problem area, and that\'s it! From there, our contractors will handle the rest! </string>
+
+    <string name="slide_3_title">TIMER INTEGRATION</string>
+    <string name="slide_3_desc"> With an integrated work timer Mender tracks the hours worked for each job. Ensuring customers will only be charged for hours worked.</string>
+
+    <string name="slide_4_title">PAYMENT GATEWAY</string>
+    <string name="slide_4_desc">All payments are done through our application, which utilizes Stripe.com\'s secure payment processing service, ensuring no financial data is stored on our servers. </string>
+
+
+    <string name="start">Start</string>
+    <string name="addapicture">Add a Picture!</string>
+    <string name="decline">Decline</string>
+    <string name="Account">Account</string>
+
+
+    // About Us texts
+
+    <string name="t1">My name is David Ring and I am the owner of Mender. I am a licensed, bonded, and insured contractor that has been working in the construction industry for the last 12 years. I am one of the lucky individuals who very much enjoys their job, the type of work I do, so I decided that I would share this love of helping people with other contractors, and thus, Mender was born.</string>
+    <string name="t2">Mender is a lead provider of a select group of well trained, background checked, fully bonded and insured contractors. Users can simply create an account, post a task description, upload at least 1 picture and you’re done! From there the contractors will have an opportunity to accept your job, based on the contractor’s availability. If the contractor accepts the job, you will then be contacted immediately to set up a time for the contractor to come by and fix that problem of yours.</string>
+    <string name="t3">Once the appointment is set up, the contractor will show up to your listed location and address the issue. The contractors keep track of their time through our app, ensuring you only pay for the time worked, and nothing more. If new parts are needed, our contractors will even run to the store for you and pick up any parts needed to complete the project. This is referred to as Drive Time which you will see represented in the bill. For more information about this, please see the Billing section below.</string>
+    <string name="t4">After the contractor has completed the job, they will ensure that the totals on the invoice are correct and end the job. Once a job has been closed, the customer may pay the invoice directly through the app. We use Stripe.com to handle all transactions, ensuring no credit card or other financial data is stored on our servers. After a successful payment has been made, we send you an email receipt complete with an itemized list of charges. </string>
+    <string name="t5">Mender is a small business. A local business who just wants to support the little guys and put food on their table. We are not a corporation or franchise. We support local businesses and those who support their community through their own small businesses.</string>
+    <string name="t6">Our main goal here at Mender is to do away with the corporations that exploit our hardworking contractors and to give them a chance to prove their skill and support their communities. We also prioritize development and make it our mission to help teach the skills necessary to become a self-sustaining business owner in a small community.</string>
+
+    <string name="t7">Handyman are just that. Handy. We excel at fixing things and enjoy the challenge of a project. We enjoy helping out in our communities. But with that said, we are not licensed Electricians, or Plumbers, or Architects. We are just men and women who enjoy helping out others with their small projects. /n If you have a project at home that may require a licensed professional to fix it, please feel free to post the project to our app, but understand that we may have to turn it down if we feel or local codes dictate that the project requires a licensed professional.  Eventually, we hope to work with licensed professionals on this application, but for now, Mender is solely focused on minor home repair services.</string>
+    <string name="t8">So what services are included in minor home repairs? Well here is short and incomplete list of services that we provide: </string>
+
+    <string name="t9">
+                          \u2022 Faucet repair/replacement \n
+                          \u2022 Garbage disposal repair/replacement \n
+                          \u2022 Sink repair/replacement \n
+                          \u2022 Troubleshooting for plumbing \n
+                          \u2022 Cabinet repair\n
+                          \u2022 Door planning and resizing \n
+                          \u2022 Door knob repair/replacement\n
+                          \u2022 Door repair/replacement\n
+                          \u2022 Lock changing\n
+                          \u2022 Key copying\n
+                          \u2022 Appliance troubleshooting\n
+                          \u2022 Landscaping\n
+                          \u2022 Garbage removal\n
+                          \u2022 Moving services\n
+                          \u2022 Electrical troubleshooting\n
+                          \u2022 Light Fixture Installation/repair\n
+                          \u2022 Power washing\n
+                          \u2022 Deck repair/replacement/staining\n
+                          \u2022 Painting\n
+                          \u2022 Smoke detector repair/replacement\n
+                          \u2022 CO2 monitor and smoke detector installation\n
+                          \u2022 Drywall repair\n
+                          \u2022 Wall Texturing\n
+                          \u2022 Fence building/repair\n
+                          \u2022 Ikea furniture assembly\n
+                          \u2022 Plus, much more!\n
+    </string>
+
+    <string name="t10">Basically any minor home repair project you can throw at us, we can take care of. If you didn’t find your project in this list, don’t worry! We are ever expanding and learning new skills with each job. So please, post that project so we can help you, and learn something new! </string>
+    <string name="t11">All of our billing has been integrated into our app through Stripe.com’s secure payment processing center. None of your financial data will be store or ever go near our servers. We have specifically designed Mender this way to ensuring a safe, secure, and efficient way to process payments. So now that we know how we process the payments let go over the charges themselves: </string>
+
+    //Rates page
+    <string name="t12_bold">Mender charges $75 per hour for labor time with a 1 hour minimum. </string>
+    <string name="t13">We charge $75 per hour because that’s the market rate for such great contractors. These guys work hard and we want to ensure that they are taken care of. The hour minimum is to ensure the trip to the project site is worth the contractors time. In a lot of cases, most jobs can be completed in under half an hour. I guess our contractors are just that good.</string>
+    <string name="t14_bold">Mender charges $40 per hour of drive time with no minimum.</string>
+    <string name="t15">We charge $40 for drive time because in most cases, a drive to the hardware store and back will only take 10 – 15 minutes. Depending on the location of the site in relation to the closest hardware store. This charge covers the contractors time, and gas.  We also have found that this is a cheaper alternative to just keeping the labor clock running, so we can pass those savings onto you.</string>
+    <string name="t16_bold">Mender adds the cost of materials automatically to our invoices.</string>
+    <string name="t17">This is one of our favorite features of our app that we are very excited to present. If a contractor needs to go to the hardware store for parts, they simply take a picture of the receipt, upload it through our app, input the amount, and from there, the material cost is automatically added to the customer’s final invoice. The material receipt is then attached to the customer’s copy and after successful payment, emailed to the customer. </string>
+    <string name="t18">We hope this information was easy to understand and informative. Mender is and always will be a growing company and with your support we can really make a difference in our community. With a focus of independence and self-sufficiency, Mender will strive to help connect small businessmen and women to their community and ensure that all of our customers and their project are taken care of and handled with professionalism, efficiency, and care. Thank you very much for considering Mender and we look forward to assisting you in future projects. </string>
+
+    <string name="apply_as_handyman">Apply as Handyman</string>
+    <string name="rate">Rates</string>
+    <string name="services">Services</string>
+    <string name="applyashandyman">If you’re interested in working with Mender as a Lead provider then first off, Thanks! It means a lot to have such great support in the community!  We like to keep things simple here, so fill out the form below and we will get back to you as soon as possible. We usually reply within 24 hours.  When we do get back to you, you will have a chance to send a resume and other documents.</string>
+
+    <string name="terms_and_conditions">Terms and Conditions</string>
+
+    <string name="tou1">Welcome to the Mender Services Mobile Application. Please read the following terms of use ("Terms of Use") before using the application. By accessing and using the application, you agree to be bound by all the Terms of Use set forth herein. If you do not agree with these Terms of Use, you should leave the application immediately.</string>
+    <string name="tou2">The mobile application is owned and operated by Mender Services. Any and all content including data, graphics, photographs, images, audio, video, software, systems, processes, trademarks, service marks, trade names and other information collectively known as the “Content” contained in this Application are proprietary to Mender Services, its affiliates and/or third-party licensors.</string>
+    <string name="tou3">The Content is protected by United States and international copyright and trademark laws. Except as stipulated herein, Content may not be modified, copied, reproduced, published, posted, transmitted, distributed, displayed, performed, used to create derivative works from, transferred or sold without the express prior written consent of Mender Services. You may download and reproduce the Content for your own noncommercial, informational purposes if you agree to maintain any and all copyright or other proprietary notices contained in such Content, and to cite the source of such Content. Reproducing multiple copies of the Content, in whole or in part, for distribution or resale is strictly prohibited except with the prior written permission of Mender Services.</string>
+    <string name="tou4">In order to provide increased value to you, our visitors, the Application might provide links to other sites on the Internet that are owned and operated by third parties and are not affiliated with us. Such linked applications are independent from Mender Services, and Mender Services has no control over the content of such websites. Therefore, Mender Services cannot be held liable and makes no warranty or representation in any way as to the accuracy, timeliness and/or completeness of the information contained on such applications or websites.</string>
+    <string name="tou5">The links which might be placed in our application are to provide information and do not imply our endorsement of the views of that application. As a condition of your continued access to and use of this application, you agree to abide by all applicable federal, state and other laws and regulations and the “Code of Conduct” set forth below. Specifically, you agree not to:</string>
+    <string name="tou6">
+                         \u2022 Collect or store any information about other users of the Application, including email addresses, without the express consent of such users \n
+                          \u2022 Create a false identity as the sender of a message, forge headers or otherwise manipulate identifiers with the purpose of disguising the origin of any material transmitted through the Application \n
+                          \u2022 Attempt to gain unauthorized access to the Application, other computer systems or networks connected to the Application, through password mining or any other means \n
+                          \u2022 Troubleshooting for plumbing \n
+                          \u2022 Interfere with or disrupt networks or servers connected to the Application or violate the regulations, policies or procedures of such networks \n
+                          \u2022 Use, download or copy, or provide to any person or entity any Application users directory or other user or usage information or any portion thereof other than in the context of your use of the Application. \n
+    </string>
+
+    <string name="tou7">We endeavor to update and keep accurate as much as possible the Content contained on the application. However, errors and/or omissions may occur. Therefore, this application, including the content and services provided herein, is being provided without any warranties, express or implied, on an “as is” basis.</string>
+    <string name="tou8">Mender Services does not warrant that the functions on the application will be uninterrupted, error free or free of viruses or other harmful components. In no event shall Mender Services be liable for any direct, indirect, incidental, special, or consequential damages that result from or in connection with the use of, or the inability to use, the application or any content, services or any product sample obtained through the application, even if Mender Services has been advised of the possibility of such damages.</string>
+    <string name="tou9">All other terms and conditions governing any product on the application are provided when you request a product. Mender Services makes no warranties regarding any product samples. Mender Services shall be held harmless from any and all claims, losses, liability, damages, injuries and expenses resulting from or relating to your use of any services obtained via the application.</string>
+    <string name="tou10">Mender Services reserves the right to modify or discontinue, at any time, temporarily or permanently, the Application (or any part of the Application) with or without notice. Furthermore, Mender Services reserves the right to change these Terms of Use at any time. When we do such updates we revise the updated date at the bottom of this page. Use of the Application after any such changes shall constitute your consent to be bound by such changes.</string>
+    <string name="tou11">These Terms of Use shall be governed by and construed in accordance with the laws of United States and any dispute is to be submitted to a court of competent jurisdiction in the judicial district of United States. A printed copy of these Terms of Use and of any notice in electronic form shall be admissible in any judicial or administrative proceedings to the same extent and under the same conditions as other business documents and records originally generated and maintained in printed form.</string>
+    <string name="tou12">These Terms of Use and any and all other legal notices or statements posted on the Application constitute the entire agreement between you and Mender Services with respect to the use of the Application, including the Content.</string>
+
+    <string name="tos_1">Please read these Terms of Service (“Terms”, “Terms of Service”) carefully before using this app (the “Service”) operated by Mender Services (“us”, “we”, or “our”).</string>
+    <string name="tos_2">Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms of Service apply to all visitors, users and others who access or use the Service. By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms, then you may not access the Service.</string>
+
+    <string name="h1">Purchases</string>
+
+    <string name="tos_3">If you wish to purchase any product or service made available through the Service (“Purchase”) you may be asked to supply certain information relevant to your Purchase including: name, email address, mailing address, credit card information, billing address.</string>
+    <string name="tos_4">You represent and warrant that: You have the legal right to use any credit card(s) or other payment method(s) in connection with any Purchase, the information you supply to us is true, correct and complete. You expressly agree that Mender Services is not responsible for any loss or damage arising from the submission of false or inaccurate information.</string>
+    <string name="tos_5">By submitting such information, you grant us the right to provide the information provided to third parties for purposes of facilitating the completion of Purchases.</string>
+    <string name="tos_6">We reserve the right to refuse or cancel your order at any time for certain reasons including but not limited to: product or service availability, errors in the product or service description or price, error in your order or other reasons. You expressly agree that Mender Services cannot accept any liability for loss or damage arising out of such cancellation. We reserve the right to refuse or cancel your order if we suspect fraud or an unauthorized or illegal transaction.</string>
+
+    <string name="h2">Availability, Errors and Inaccuracies</string>
+
+    <string name="tos_7">We are constantly updating our offerings of products and services on the Service. The products or services available on our Service may be mispriced, described inaccurately, or unavailable, and we may experience delays in updating information on the Service. You expressly agree that any such offer of a product or service does not constitute a legal offer capable of attracting legal consequences.</string>
+    <string name="tos_8">We cannot and do not guarantee the accuracy or completeness of any information, including prices, product images, specifications, availability, and services. We reserve the right to change or update information and to correct errors, inaccuracies, or omissions at any time without prior notice.</string>
+
+    <string name="h3">Accounts</string>
+
+    <string name="tos_9">When you create an account with us, you must provide us information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms of Service, which may result in immediate termination of your account on our Service.</string>
+    <string name="tos_10">You are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password, whether your password is with our Service or a third-party service.</string>
+    <string name="tos_11">You agree not to reveal your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.</string>
+
+    <string name="h4">Intellectual Property</string>
+
+    <string name="tos_12">The Service and its original content, features and functionality are and will remain the exclusive property of Mender Services and its licensors. The Service is protected by copyright, trademark, and other laws of both the United States and foreign countries. Our trademarks may not be used in connection with any product or service without the prior written consent of Mender Services.</string>
+
+    <string name="h5">Links to Other Web Sites</string>
+
+    <string name="tos_13">Our Service may contain links to third-party web sites or services that are not owned or controlled by Mender Services. We have no control over any website we are linked to so we cannot be responsible for safeguarding any information which you provide such sites and this privacy statement does not govern such sites. Caution should be exercised when visiting linked websites and the privacy statement of the website in question should be examined.</string>
+    <string name="tos_14">Mender Services has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that Mender Services shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services. We strongly advise you to read the terms of service and privacy policies of any third-party web sites or services that you visit.</string>
+
+    <string name="h6">Termination</string>
+
+    <string name="tos_15">We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</string>
+    <string name="tos_16">Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account, you may simply discontinue using the Service.</string>
+    <string name="tos_17">All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.</string>
+
+    <string name="h7">Limitation of Liability</string>
+    <string name="tos_18">In no event shall Mender Services, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the Service, any conduct or content of any third party on the Service, any content obtained from the Service, unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.</string>
+
+    <string name="h8">Disclaimer</string>
+
+    <string name="tos_19">Your use of the Service is at your sole risk. The Service is provided on an “as is” and “as available” basis. The Service is provided without warranties of any kind, whether express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement or course of performance</string>
+    <string name="tos_20">Mender Services, its subsidiaries, affiliates, and its licensors do not warrant that: the Service will function uninterrupted, secure or available at any particular time or location, any errors or defects will be corrected, the Service is free of viruses or other harmful components, the results of using the Service will meet your requirements.</string>
+
+    <string name="h9">Exclusions</string>
+    <string name="tos_21">Without limiting the generality of the foregoing and notwithstanding any other provision of these terms, under no circumstances will Mender Services ever be liable to you or any other person for any indirect, incidental, consequential, special, punitive or exemplary loss or damage arising from, connected with, or relating to your use of the Service, these Terms, the subject matter of these Terms, the termination of these Terms or otherwise, including but not limited to personal injury, loss of data, business, markets, savings, income, profits, use, production, reputation or goodwill, anticipated or otherwise, or economic loss, under any theory of liability regardless of any negligence or other fault or wrongdoing (including without limitation gross negligence and fundamental breach) by Mender Services or any person for whom Mender Services is responsible, and even if Mender Services has been advised of the possibility of such loss or damage being incurred.</string>
+
+
+    <string name="h10">Governing Law</string>
+    <string name="tos_22">These Terms shall be governed and construed in accordance with the laws of United States without regard to its conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have between us regarding the Service.</string>
+
+    <string name="h11">Changes</string>
+    <string name="tos_23">These Terms shall be governed and construed in accordance with the laws of United States without regard to its conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have between us regarding the Service.</string>
+
+    <string name="h12">Contact Us</string>
+    <string name="tos_24">If you have any questions about these Terms, please contact us.</string>
+    <string name="job">Job:</string>
+    <string name="description">Description:</string>
+    <string name="locations">Location:</string>
+    <string name="job_status">Job Status:</string>
+    <string name="assigned_to">Assigned to:</string>
+    <string name="about_our_rates_description">Please make sure you understand how our rates work and how we charge for each job. \n
+      \n  To learn more about our rates, please see the Rates page.</string>
+    <string name="menderphonenumber">808-491-8311</string>
+    <string name="menderemail">customerservice@menderservices.com</string>
+    <string name="questions">Questions? Comments?</string>
+    <string name="view_payment_details">View Payment Details</string>
+    <string name="share">Share App</string>
+    <string name="title_activity_user__profile">User_Profile</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="tab_text_3">Tab 3</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //Tanseer
+
+    <string name="material_cost_hint">Enter total cost of receipt.</string>
+    <string name="external_storage_and_camera_permissions_required">External storage and camera permissions are required.</string>
+    <string name="loading_image_error">Loading image failed!</string>
+    <string name="title_activity_job_detailswith_fab">JobDetailswithFab</string>
+    <string name="available_for_work">Available for work</string>
+    <string name="msg_subscribed">New job notification on</string>
+    <string name="msg_subscribe_failed">Handyman subscribe failed</string>
+    <string name="msg_unsubscribed">New job notification off</string>
+    <string name="msg_unsubscribe_failed">unsubscribe failed</string>
+
+
+</resources>

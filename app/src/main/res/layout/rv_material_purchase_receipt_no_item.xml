@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:background="@drawable/sharpcorners"
+    android:elevation="5dp"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_margin="4dp"
+        android:id="@+id/materialReceiptImage"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_below="@+id/materialReceiptImage"
+        android:id="@+id/materialDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Image Name"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_below="@+id/materialDate"
+        android:layout_marginTop="2dp"
+        android:id="@+id/materialCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="$10.00"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="4dp"
+        android:src="@drawable/checkmark"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+</RelativeLayout>

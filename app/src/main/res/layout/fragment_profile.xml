@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:padding="4dp"
+            android:text=""
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="casual"
+            android:paddingLeft="4dp"
+            android:text=""
+            android:textColor="@color/primary_text_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="casual"
+            android:paddingLeft="4dp"
+            android:text=""
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:fontFamily="casual"
+            android:maxLines="3"
+            android:paddingLeft="4dp"
+            android:text=""
+            android:textColor="@color/primary_text_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/city_and_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="casual"
+            android:paddingLeft="4dp"
+            android:text=""
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/edit_profile"
+                style="@style/Base.Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/sharpcorners"
+                android:elevation="24dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Edit Profile"
+                android:textColor="@color/primary_text_color" />
+
+            <Button
+                android:id="@+id/paymentmethods"
+                style="@style/Base.Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/sharpcorners"
+                android:elevation="24dp"
+                android:visibility="gone"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Payment Methods"
+                android:textColor="@color/primary_text_color" />
+        </LinearLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/availabilityHandyRL"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:background="@drawable/sharpcorners"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:id="@+id/availableTV"
+                android:padding="3dp"
+                android:text="@string/available_for_work"
+                android:textColor="@color/primary_text_color"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Switch
+                android:id="@+id/availableSwt"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/previousjobs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:textSize="15sp"
+        android:text="Previous Jobs"
+        android:textAlignment="center"
+        android:textColor="@color/primary_text_color" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorAccent" />
+
+
+    <TextView
+        android:id="@+id/previousjobs2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:text="This is where all of your job requests will be stored, once they have been completed."
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#646464" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/my_requests_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:padding="5dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

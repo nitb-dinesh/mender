@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/posted_jobs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Handyman Requests"
+        android:padding="15dp"
+        android:background="#2ab1a1"
+        android:textColor="@color/primary_text_color"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/handyman_requests_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/posted_jobs"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/progress_wheel"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        wheel:matProg_barColor="@color/primary_text_color"
+        android:layout_gravity="center"
+        wheel:matProg_progressIndeterminate="true" />
+
+</RelativeLayout>

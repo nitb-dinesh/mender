@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/interested"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:text="Interested in working with Mender?"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text_color"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/welcometext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="@string/applyashandyman"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorAccent">
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/contractor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Contractors Contact information"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text_color"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:paddingTop="5dp"
+                    android:text="@string/icon_user"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/handyman_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="@color/primary_text_color"
+                    android:hint="Full Name"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/primary_text_color"
+                    android:textColorHint="@color/primary_text_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:paddingTop="5dp"
+                    android:text="@string/icon_email"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/handyman_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/primary_text_color"
+                    android:hint="Email Address"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/primary_text_color"
+                    android:textColorHint="@color/primary_text_color"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:paddingTop="5dp"
+                    android:text="@string/icon_phone"
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="12sp" />
+
+
+                <EditText
+                    android:id="@+id/handyman_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="30dp"
+                    android:backgroundTint="@color/primary_text_color"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:paddingLeft="10dp"
+                    android:textColor="@color/primary_text_color"
+                    android:textColorHint="@color/primary_text_color"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/handyman_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="@color/primary_text_color"
+                android:hint="Tell us why you would like to work for Mender and what you have to offer the community."
+                android:paddingLeft="10dp"
+                android:textColor="@color/primary_text_color"
+                android:textColorHint="@color/primary_text_color"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/apply_as_handyman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/sharpcorners"
+                android:padding="10dp"
+                android:text="Submit"
+                android:textColor="@color/primary_text_color" />
+
+            <EditText
+                android:id="@+id/enter_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/primary_text_color"
+                android:hint="Enter Code to see requests"
+                android:paddingLeft="10dp"
+                android:textColor="@color/primary_text_color"
+                android:textColorHint="@color/primary_text_color"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/see_requests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sharpcorners"
+                android:padding="10dp"
+                android:text="See Requests"
+                android:textColor="@color/primary_text_color" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

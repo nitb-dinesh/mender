@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home"
+            android:checked="true"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/profile"
+            android:checked="false"
+            android:title="@string/Account" />
+
+        <item
+            android:id="@+id/admin"
+            android:checked="false"
+            android:title="@string/admin"
+            android:visible="false"/>
+
+        <item
+            android:id="@+id/rates"
+            android:checked="false"
+            android:title="@string/rate" />
+
+        <!--<item-->
+            <!--android:id="@+id/services"-->
+            <!--android:checked="false"-->
+            <!--android:title="@string/services" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/apply_as_handyman"-->
+            <!--android:checked="false"-->
+            <!--android:title="@string/apply_as_handyman" />-->
+
+        <item
+            android:id="@+id/contact_us"
+            android:checked="false"
+            android:title="@string/contact_us" />
+
+        <!--<item-->
+            <!--android:id="@+id/terms_and_conditions"-->
+            <!--android:checked="false"-->
+            <!--android:title="Terms of Use" />-->
+
+        <item
+            android:id="@+id/share"
+            android:checked="false"
+            android:title="@string/share_app" />
+
+        <item
+            android:id="@+id/logout"
+            android:checked="false"
+            android:title="@string/logout" />
+
+    </group>
+
+</menu>
