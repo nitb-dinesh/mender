@@ -86,16 +86,14 @@ public class MyJobDetailsActivity extends AppCompatActivity {
         materialReciptReference.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+
                 if (dataSnapshot.hasChildren()) {
                     MaterialReceipt materialReceipt = dataSnapshot.getValue(MaterialReceipt.class);
                     materialReceiptArrayList.add(materialReceipt);
                     materialReceiptAdapter.notifyDataSetChanged();
 
                     Log.d(TAG, materialReciptReference.toString());
-
 //                    materialCharges = materialCharges + Double.parseDouble(materialReceipt.getMaterialCost());
-//
-//
 //                    HashMap<String, Object> request = new HashMap<>();
 //                    request.put("materialCost",String.valueOf(materialCharges) );
 //                    jobDetailsReference.child(jobId).updateChildren(request);

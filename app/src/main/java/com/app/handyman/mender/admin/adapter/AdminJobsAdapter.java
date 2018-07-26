@@ -18,6 +18,7 @@ import android.widget.TextView;
 
 import com.app.handyman.mender.R;
 import com.app.handyman.mender.common.utils.Icon_Manager;
+import com.app.handyman.mender.handyman.activity.MyJobDetailsActivity;
 import com.app.handyman.mender.model.Request;
 import com.app.handyman.mender.user.activity.RequestDetailsActivity;
 import com.bumptech.glide.Glide;
@@ -78,11 +79,12 @@ public class AdminJobsAdapter extends RecyclerView.Adapter<AdminJobsAdapter.RV_V
         holder.mMasterLin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                Intent intent = new Intent(mContext, RequestDetailsActivity.class);
+              /*  Intent intent = new Intent(mContext, RequestDetailsActivity.class);
+                intent.putExtra("id", id);
+                mContext.startActivity(intent);*/
+                Intent intent = new Intent(mContext, MyJobDetailsActivity.class);
                 intent.putExtra("id", id);
                 mContext.startActivity(intent);
-
             }
         });
 
