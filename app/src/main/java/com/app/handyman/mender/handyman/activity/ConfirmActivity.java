@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.app.handyman.mender.R;
 import com.app.handyman.mender.common.activity.HomeActivity;
+import com.app.handyman.mender.common.activity.RaiseDisputeActivity;
 
 public class ConfirmActivity extends AppCompatActivity {
 
@@ -124,8 +125,12 @@ public class ConfirmActivity extends AppCompatActivity {
 
                     // TODO : Save Values in Backend with Task Id
 
-                    Intent intent = new Intent(ConfirmActivity.this, HomeActivity.class);
+                    Intent intent = new Intent(ConfirmActivity.this, RaiseDisputeActivity.class);
+                    // intent.putExtra("request", r[0]);
                     startActivity(intent);
+
+                  /*  Intent intent = new Intent(ConfirmActivity.this, HomeActivity.class);
+                    startActivity(intent);*/
                 }
 
             }

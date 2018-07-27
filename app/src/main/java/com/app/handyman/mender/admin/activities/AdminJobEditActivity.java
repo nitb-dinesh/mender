@@ -15,4 +15,5 @@ public class AdminJobEditActivity extends AppCompatActivity {
         
         // from web windows
     }
+
 }

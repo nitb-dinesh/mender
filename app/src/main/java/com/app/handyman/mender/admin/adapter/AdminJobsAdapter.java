@@ -17,6 +17,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.app.handyman.mender.R;
+import com.app.handyman.mender.admin.activities.AdminJobDetailsActivity;
 import com.app.handyman.mender.common.utils.Icon_Manager;
 import com.app.handyman.mender.handyman.activity.MyJobDetailsActivity;
 import com.app.handyman.mender.model.Request;
@@ -82,7 +83,7 @@ public class AdminJobsAdapter extends RecyclerView.Adapter<AdminJobsAdapter.RV_V
               /*  Intent intent = new Intent(mContext, RequestDetailsActivity.class);
                 intent.putExtra("id", id);
                 mContext.startActivity(intent);*/
-                Intent intent = new Intent(mContext, MyJobDetailsActivity.class);
+                Intent intent = new Intent(mContext, AdminJobDetailsActivity.class);
                 intent.putExtra("id", id);
                 mContext.startActivity(intent);
             }

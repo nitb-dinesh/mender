@@ -103,9 +103,11 @@ public class AdminJobsFragment extends Fragment {
 
     private void getJobs() {
 
-        Query unassignedJobsReference = requestsReference.orderByChild("assignedTo").equalTo(FirebaseAuth.getInstance().getCurrentUser().getEmail());
+        //Query unassignedJobsReference = requestsReference.orderByChild("assignedTo").equalTo(FirebaseAuth.getInstance().getCurrentUser().getEmail());
+        Query unassignedJobsReference = requestsReference.orderByChild("status").equalTo(true);
 
         mProgresWheel.spin();
+
         unassignedJobsReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
