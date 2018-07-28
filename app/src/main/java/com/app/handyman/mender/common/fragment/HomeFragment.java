@@ -158,11 +158,13 @@ public class HomeFragment extends Fragment { // implements TabLayout.OnTabSelect
     }
 
     public static void onReceivedTotalJobs(int count) {
-        // tabLayout.getTabAt(0).setText("My Jobs (" + count + ")");
+        //if (tabLayout != null)
+           // tabLayout.getTabAt(0).setText("My Jobs (" + count + ")");
     }
 
     public static void onReceivedTotalOpenJobs(int count) {
-        // tabLayout.getTabAt(1).setText("Open Jobs (" + count + ")");
+      //  if (tabLayout != null)
+          //  tabLayout.getTabAt(1).setText("Open Jobs (" + count + ")");
     }
 
     class ViewPagerAdapter extends FragmentPagerAdapter {
@@ -258,7 +260,7 @@ public class HomeFragment extends Fragment { // implements TabLayout.OnTabSelect
 
                                 }
 
-                                if (mySession.getDutyStatus().equalsIgnoreCase(DUTY_ONLINE)){
+                                if (mySession.getDutyStatus().equalsIgnoreCase(DUTY_ONLINE)) {
                                     try {
                                         FirebaseMessaging.getInstance().subscribeToTopic("job")
                                                 .addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -280,7 +282,7 @@ public class HomeFragment extends Fragment { // implements TabLayout.OnTabSelect
                                     } catch (Exception e) {
                                         e.printStackTrace();
                                     }
-                                }else {
+                                } else {
                                     FirebaseMessaging.getInstance().unsubscribeFromTopic("job")
                                             .addOnCompleteListener(new OnCompleteListener<Void>() {
                                                 @Override

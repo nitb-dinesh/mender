@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -40,186 +40,240 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <HorizontalScrollView
-                android:id="@+id/hsv"
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:fillViewport="true"
-                android:measureAllChildren="false"
-                android:scrollbars="none">
+                android:background="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="140dp"
-                    android:layout_marginBottom="5dp"
-                    android:orientation="horizontal"
-                    android:padding="5dp">
 
-                    <ImageView
-                        android:id="@+id/image"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:layout_margin="5dp"
-                        android:elevation="10dp"
-                        android:scaleType="fitXY"
-                        android:visibility="gone"
-                        app:srcCompat="@android:drawable/ic_menu_gallery" />
-
-                    <ImageView
-                        android:id="@+id/image2"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:layout_margin="5dp"
-                        android:elevation="10dp"
-                        android:scaleType="fitXY"
-                        android:visibility="gone"
-                        app:srcCompat="@android:drawable/ic_menu_gallery" />
-
-                    <ImageView
-                        android:id="@+id/image3"
-                        android:layout_width="120dp"
-                        android:layout_height="120dp"
-                        android:layout_margin="5dp"
-                        android:elevation="10dp"
-                        android:scaleType="fitXY"
-                        android:visibility="gone"
-                        app:srcCompat="@android:drawable/ic_menu_gallery" />
-                </LinearLayout>
-
-            </HorizontalScrollView>
-
-            <LinearLayout
-                android:id="@+id/linearLayout"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/colorAccent">
-
-                </View>
-
-                <TextView
-                    android:id="@+id/jobtitle1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
-                    android:padding="5dp"
-                    android:text="Job: "
-                    android:textColor="@color/colorAccent"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/txtJobTitle"
+                <HorizontalScrollView
+                    android:id="@+id/hsv"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
-                    android:padding="7dp"
-                    android:text="Job Title"
-                    android:textColor="@color/primary_text_color"
-                    android:textSize="16sp" />
-            </LinearLayout>
+                    android:fillViewport="true"
+                    android:measureAllChildren="false"
+                    android:scrollbars="none">
 
-            <LinearLayout
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="140dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:elevation="10dp"
+                            android:scaleType="fitXY"
+                            android:visibility="gone"
+                            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+                        <ImageView
+                            android:id="@+id/image2"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:elevation="10dp"
+                            android:scaleType="fitXY"
+                            android:visibility="gone"
+                            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+                        <ImageView
+                            android:id="@+id/image3"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:elevation="10dp"
+                            android:scaleType="fitXY"
+                            android:visibility="gone"
+                            app:srcCompat="@android:drawable/ic_menu_gallery" />
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical">
+                android:background="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
 
-                <TextView
-                    android:id="@+id/jobdes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    android:text="Description: "
-                    android:textColor="@color/colorAccent"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/txtJobDesc"
+                <LinearLayout
+                    android:id="@+id/linearLayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:paddingLeft="10dp"
-                    android:text="Job Description"
-                    android:textColor="@color/primary_text_color"
-                    android:textSize="16sp" />
-            </LinearLayout>
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/colorAccent">
+
+                    </View>
 
 
-            <LinearLayout
+                    <TextView
+                        android:id="@+id/jobtitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="5dp"
+                        android:text="Job: "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtJobTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:padding="7dp"
+                        android:text="Job Title"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical">
+                android:background="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
 
-                <TextView
-                    android:id="@+id/txtLocation"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    android:text="Address : "
-                    android:textColor="@color/colorAccent"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/txtAddress"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:clickable="true"
-                    android:gravity="left"
-                    android:maxLines="2"
-                    android:paddingLeft="10dp"
-                    android:text="123 Easy st."
-                    android:textColor="@color/primary_text_color"
-                    android:textIsSelectable="true"
-                    android:textSize="16sp" />
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
 
-            </LinearLayout>
+                    <TextView
+                        android:id="@+id/jobdes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Description: "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20sp" />
 
-            <LinearLayout
+                    <TextView
+                        android:id="@+id/txtJobDesc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:paddingLeft="10dp"
+                        android:text="Job Description"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical">
+                android:background="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
 
-                <TextView
-                    android:id="@+id/txtPhoneNum"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    android:text="Phone Number : "
-                    android:textColor="@color/colorAccent"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/txtPhoneNumber"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:gravity="left"
-                    android:paddingLeft="10dp"
-                    android:text="+1 910 243 8500"
-                    android:textColor="@color/primary_text_color"
-                    android:textSize="16sp" />
-            </LinearLayout>
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Address : "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:clickable="true"
+                        android:gravity="left"
+                        android:maxLines="2"
+                        android:paddingLeft="10dp"
+                        android:text="123 Easy st."
+                        android:textColor="@color/primary_text_color"
+                        android:textIsSelectable="true"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtPhoneNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Phone Number : "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtPhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="+1 910 243 8500"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -305,148 +359,194 @@
 
             </LinearLayout>
 
-            <LinearLayout
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical">
+                android:background="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
 
-                <TextView
-                    android:id="@+id/txtDrivingHours"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    android:text="Driving Hours : "
-                    android:textColor="@color/colorAccent"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/txtDrivingHoursValue"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:gravity="left"
-                    android:paddingLeft="10dp"
-                    android:text="2 hrs"
-                    android:textColor="@color/primary_text_color"
-                    android:textSize="16sp" />
-            </LinearLayout>
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
 
-            <LinearLayout
+                    <TextView
+                        android:id="@+id/txtDrivingHours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Driving Hours : "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtDrivingHoursValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="2 hrs"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical">
+                android:background="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
 
-                <TextView
-                    android:id="@+id/txtWorkingHours"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    android:text="Working Hours : "
-                    android:textColor="@color/colorAccent"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/txtWorkingHoursValue"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:gravity="left"
-                    android:paddingLeft="10dp"
-                    android:text="2 hours"
-                    android:textColor="@color/primary_text_color"
-                    android:textSize="16sp" />
-            </LinearLayout>
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
 
-            <LinearLayout
+                    <TextView
+                        android:id="@+id/txtWorkingHours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Working Hours : "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtWorkingHoursValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="2 hours"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical">
+                android:background="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
 
-                <TextView
-                    android:id="@+id/txtMaterialPurchased"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="5dp"
-                    android:text="Material Cost : "
-                    android:textColor="@color/colorAccent"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/txtMaterialPurchasedValue"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:gravity="left"
-                    android:paddingLeft="10dp"
-                    android:text="$00:00"
-                    android:textColor="@color/primary_text_color"
-                    android:textSize="16sp" />
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
 
-                <android.support.v7.widget.RecyclerView
-                    android:id="@+id/rvMaterialRecipt"
+                    <TextView
+                        android:id="@+id/txtMaterialPurchased"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Material Cost : "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtMaterialPurchasedValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="$00:00"
+                        android:textColor="@color/primary_text_color"
+                        android:textSize="16sp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvMaterialRecipt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
-            </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
+                    <Button
+                        android:id="@+id/raise_dispute"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/sharpcorners"
+                        android:padding="10dp"
+                        android:text="Raise Dispute"
+                        android:textColor="@color/colorAccent" />
 
-            <Button
-                android:id="@+id/raise_dispute"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/sharpcorners"
-                android:padding="10dp"
-                android:text="Raise Dispute"
-                android:textColor="@color/colorAccent" />
+                    <Button
+                        android:id="@+id/set_reminder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/sharpcorners"
+                        android:padding="10dp"
+                        android:text="Set Appointment"
+                        android:textColor="@color/colorAccent" />
 
-            <Button
-                android:id="@+id/set_reminder"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:background="@drawable/sharpcorners"
-                android:padding="10dp"
-                android:text="Set Appointment"
-                android:textColor="@color/colorAccent" />
+                    <Button
+                        android:id="@+id/job_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/sharpcorners"
+                        android:padding="10dp"
+                        android:text="Job Details"
+                        android:textColor="@color/colorAccent"
+                        android:visibility="gone" />
 
-            <Button
-                android:id="@+id/job_details"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:background="@drawable/sharpcorners"
-                android:padding="10dp"
-                android:text="Job Details"
-                android:textColor="@color/colorAccent"
-                android:visibility="gone" />
-
-            <Button
-                android:id="@+id/start_job"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="30dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:background="@drawable/sharpcorners"
-                android:text="Restart Job"
-                android:textColor="@color/primary_text_color" />
+                    <Button
+                        android:id="@+id/start_job"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/sharpcorners"
+                        android:text="Restart Job"
+                        android:textColor="@color/primary_text_color" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
 
         </LinearLayout>
     </ScrollView>
