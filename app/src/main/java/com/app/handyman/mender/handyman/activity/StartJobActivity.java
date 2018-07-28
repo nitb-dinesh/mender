@@ -10,13 +10,16 @@ import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.SystemClock;
+import android.support.annotation.DrawableRes;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.util.TypedValue;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
@@ -50,21 +53,21 @@ import java.util.HashMap;
 import com.app.handyman.mender.model.Request;
 
 import static com.app.handyman.mender.R.id.image2;
+import static com.app.handyman.mender.R.id.labortimestartstop;
 
 /**
  * App for keeping count of the time the user takes for driving, labor and also for inputting material costs.
  */
 
-public class StartJobActivity extends AppCompatActivity implements View.OnClickListener {
+public class StartJobActivity extends AppCompatActivity implements View.OnClickListener{
 
 
     private final static String TAG = StartJobActivity.class.getSimpleName();
     private static final int REQUEST_CAPTURE_FROM_CAMERA = 1;
 
     private TextView mTitle, mTotalCost, mcharges, charges2;
-    private LinearLayout mDriveTimeLayout, mLaborTimeLayout;
+    private LinearLayout mDriveTimeLayout, mLaborTimeLayout, labortimestartstop, drivetimestartstop;
     private Button mDriveTimeButton, mLaborTimeButton, mReceiptsButton, mJobInfo, mEndJob, mIncompleteJob;
-
     private Chronometer mDriveChronometer, mLaborChronometer;
     private TextView mDriveTotal, mLaborTotal, drivetime1, labortime1;
     private Button dtPlay, dtPause, dtReset;
@@ -97,52 +100,69 @@ public class StartJobActivity extends AppCompatActivity implements View.OnClickL
     private Toast toast;
 
 
-    private void handymanDrive() {
+
+    private void handymanDrive(){
         if (isTimerOn) {
             Toast.makeText(StartJobActivity.this, "Pause the timer first.", Toast.LENGTH_SHORT).show();
         } else {
 
             // Show the correct view!
 
-            mDriveTimeLayout.setVisibility(View.VISIBLE);
-            mLaborTimeLayout.setVisibility(View.GONE);
 
-            mDriveTimeButton.setAlpha(1f);
-            mLaborTimeButton.setAlpha(.5f);
-            mReceiptsButton.setAlpha(.5f);
+            //   mDriveTimeLayout.setVisibility(View.VISIBLE);
+            //  mLaborTimeLayout.setVisibility(View.GONE);
 
-            mDriveTimeButton.setTextColor(Color.parseColor("#2ec4b6"));
-            mLaborTimeButton.setTextColor(Color.parseColor("#000000"));
-            mReceiptsButton.setTextColor(Color.parseColor("#000000"));
+            //Start and Stop buttons visibility
+            labortimestartstop = (LinearLayout) findViewById(R.id.labortimestartstop);
+            drivetimestartstop = (LinearLayout) findViewById(R.id.drivetimestartstop);
+            drivetimestartstop.setVisibility(View.VISIBLE);
+            labortimestartstop.setVisibility(View.GONE);
+
+            //Color change depending on what button is pressed.
+            mDriveTimeButton.setBackgroundResource(R.drawable.sharpcorners_3);
+            mLaborTimeButton.setBackgroundColor(Color.parseColor("#ffffff"));
+
+            drivetime1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 25);
+            labortime1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
+
+
+            mDriveTimeButton.setTextColor(Color.parseColor("#ffffff"));
+            mLaborTimeButton.setTextColor(Color.parseColor("#2ec4b6"));
+            mReceiptsButton.setTextColor(Color.parseColor("#2ec4b6"));
 
 
         }
 
     }
 
-    private void handymanLabor() {
+    private void handymanLabor(){
         if (isTimerOn) {
             Toast.makeText(StartJobActivity.this, "Pause the timer first.", Toast.LENGTH_SHORT).show();
         } else {
 
             // Show the correct view!
 
-            mDriveTimeLayout.setVisibility(View.GONE);
-            mLaborTimeLayout.setVisibility(View.VISIBLE);
+            //mDriveTimeLayout.setVisibility(View.GONE);
+            // mLaborTimeLayout.setVisibility(View.VISIBLE);
 
-            mDriveTimeButton.setAlpha(.5f);
-            mLaborTimeButton.setAlpha(1f);
-            mReceiptsButton.setAlpha(.5f);
+            //Start and Stop buttons visibility
+
+            labortimestartstop.setVisibility(View.VISIBLE);
+            drivetimestartstop.setVisibility(View.GONE);
+            mLaborTimeButton.setBackgroundResource(R.drawable.sharpcorners_3);
+            mDriveTimeButton.setBackgroundColor(Color.parseColor("#ffffff"));
+
+            drivetime1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
+            labortime1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 25);
 
             mDriveTimeButton.setTextColor(Color.parseColor("#000000"));
-            mLaborTimeButton.setTextColor(Color.parseColor("#2ec4b6"));
+            mLaborTimeButton.setTextColor(Color.parseColor("#ffffff"));
             mReceiptsButton.setTextColor(Color.parseColor("#000000"));
 
         }
 
     }
-
-    private void handymanReceipts() {
+    private void handymanReceipts(){
         if (isTimerOn) {
             toast.setText("Pause the timer first.");
         } else {
@@ -153,7 +173,7 @@ public class StartJobActivity extends AppCompatActivity implements View.OnClickL
 
     }
 
-    private void handymanIncompleteJob() {
+    private void handymanIncompleteJob(){
         final Dialog dialog = new Dialog(StartJobActivity.this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setCancelable(false);
@@ -187,6 +207,7 @@ public class StartJobActivity extends AppCompatActivity implements View.OnClickL
                 request.setIsStarted(false);
 
                 request.setMaterialCost("0");
+
 
 
                 HashMap<String, Object> map = request.toFirebase();
@@ -395,7 +416,7 @@ public class StartJobActivity extends AppCompatActivity implements View.OnClickL
                 String a[] = text.toString().split(":");
                 String min = a[0] + " min : ";
                 String sec = a[1] + " sec";
-               // int min1 = Integer.parseInt(a[0]);
+                // int min1 = Integer.parseInt(a[0]);
                 mDrivingCost.setText("" + min + sec);
 
             } else if (text.length() == 7) {
@@ -403,7 +424,7 @@ public class StartJobActivity extends AppCompatActivity implements View.OnClickL
                 String hr = a[0] + " hrs : ";
                 String min = a[1] + " min : ";
                 String sec = a[2] + " sec";
-               // chronometer.setText("0" + hr + min + sec);
+                // chronometer.setText("0" + hr + min + sec);
                 mDrivingCost.setText(sec);
             }
 
@@ -497,7 +518,7 @@ public class StartJobActivity extends AppCompatActivity implements View.OnClickL
 
     }
 
-    private void handymanJobInfo() {
+    private void handymanJobInfo(){
         final Dialog dialog = new Dialog(StartJobActivity.this);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setCancelable(false);
@@ -524,10 +545,14 @@ public class StartJobActivity extends AppCompatActivity implements View.OnClickL
 
         txtPhoneNum = (TextView) dialog.findViewById(R.id.txtPhoneNum);
         txtPhoneNum.setTypeface(myCustomFont);
+
+
 //
+
         txtAddress = (TextView) dialog.findViewById(R.id.txtAddress);
         txtAddress.setText(request.getAddress());
         txtAddress.setTypeface(myCustomFont);
+
 
 
         txtAddress.setOnClickListener(new View.OnClickListener() {
@@ -604,10 +629,9 @@ public class StartJobActivity extends AppCompatActivity implements View.OnClickL
         dialog.show();
 
     }
-
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
+        switch (view.getId()){
             case R.id.drive_time_button:
 
                 handymanDrive();
@@ -638,7 +662,7 @@ public class StartJobActivity extends AppCompatActivity implements View.OnClickL
         }
     }
 
-    private void initViews() {
+    private void initViews(){
         toast = Toast.makeText(StartJobActivity.this, "", Toast.LENGTH_LONG);
         // Drive Time Costs
         mDriveChronometer = (Chronometer) findViewById(R.id.drive_chronometer);
@@ -646,7 +670,6 @@ public class StartJobActivity extends AppCompatActivity implements View.OnClickL
         //mDriveChronometer.setText("00:00");
         Typeface myCustomFont21 = Typeface.createFromAsset(getAssets(), "fonts/Quicksand Book.otf");
         mDriveChronometer.setTypeface(myCustomFont21);
-
         mDriveTotal = (TextView) findViewById(R.id.drive_total);
 
         dtPlay = (Button) findViewById(R.id.dt_play);
@@ -697,8 +720,10 @@ public class StartJobActivity extends AppCompatActivity implements View.OnClickL
         //Layouts
         mDriveTimeLayout = (LinearLayout) findViewById(R.id.drive_time_layout);
         mLaborTimeLayout = (LinearLayout) findViewById(R.id.labor_time_layout);
-
-
+        drivetimestartstop = (LinearLayout) findViewById(R.id.drivetimestartstop);
+        drivetimestartstop.setVisibility(View.GONE);
+        labortimestartstop = (LinearLayout) findViewById(R.id.labortimestartstop);
+        labortimestartstop.setVisibility(View.VISIBLE);
         //Buttons
         mDriveTimeButton = (Button) findViewById(R.id.drive_time_button);
         Typeface myCustomFont13 = Typeface.createFromAsset(getAssets(), "fonts/Quicksand Book.otf");
@@ -748,12 +773,14 @@ public class StartJobActivity extends AppCompatActivity implements View.OnClickL
         labortime1.setTypeface(myCustomFont23);
 
 
+
         final ImagePopup imagePopup = new ImagePopup(this);
         imagePopup.setWindowHeight(800); // Optional
         imagePopup.setWindowWidth(800); // Optional
 //        imagePopup.setBackgroundColor(Color.BLACK);  // Optional
 //        imagePopup.setHideCloseIcon(true);  // Optional
 //        imagePopup.setImageOnClickClose(true);  // Optional
+
 
 
         mDriveTimeButton.setPaintFlags(mDriveTimeButton.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
@@ -771,73 +798,77 @@ public class StartJobActivity extends AppCompatActivity implements View.OnClickL
 
 
                 for (DataSnapshot data : dataSnapshot.getChildren()) {
-                    request = data.getValue(Request.class);
+                    try {
+                        request = data.getValue(Request.class);
 
-                    // customerId = request.getCustomerId();
+                        // customerId = request.getCustomerId();
 
-                    int currentDriveTime = 0;
-                    if (request.getDriveTime() != null) {
-                        try {
-                            currentDriveTime = Integer.parseInt(request.getDriveTime());
-                        } catch (Exception e) {
-                            e.printStackTrace();
+                        int currentDriveTime = 0;
+                        if (request.getDriveTime() != null) {
+                            try {
+                                currentDriveTime = Integer.parseInt(request.getDriveTime());
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
                         }
-                    }
 
-                    mDriveChronometer.setBase(SystemClock.elapsedRealtime() + currentDriveTime);
-                    // mDriveChronometer.start();
-                    // mDriveChronometer.stop();
+                        mDriveChronometer.setBase(SystemClock.elapsedRealtime() + currentDriveTime);
+                        // mDriveChronometer.start();
+                        // mDriveChronometer.stop();
 
-                    int currentLabourTime = 0;
-                    if (request.getLabourTime() != null) {
-                        try {
-                            currentLabourTime = Integer.parseInt(request.getLabourTime());
-                        } catch (Exception e) {
-                            e.printStackTrace();
+                        int currentLabourTime = 0;
+                        if (request.getLabourTime() != null) {
+                            try {
+                                currentLabourTime = Integer.parseInt(request.getLabourTime());
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
                         }
+
+
+                        mLaborChronometer.setBase(SystemClock.elapsedRealtime() + currentLabourTime);
+                        // mLaborChronometer.start();
+                        // mLaborChronometer.stop();
+
+                        Log.d("TESTEST1", request.getTotalCost());
+
+                        Log.d("TESTEST2", String.format("$%.2f", 0.67));
+
+
+                        if (request.getDriveTimeCost() != null) {
+                            driveTimeCharges = Double.parseDouble(request.getDriveTimeCost());
+                            mDriveTotal.setText(String.format("$%.2f", driveTimeCharges));
+                        } else {
+                            driveTimeCharges = 0;
+                        }
+
+                        if (request.getLaborTimeCost() != null) {
+                            laborTimeCharges = Double.parseDouble(request.getLaborTimeCost());
+                            mLaborTotal.setText(String.format("$%.2f", laborTimeCharges));
+                        } else {
+                            laborTimeCharges = 0;
+                        }
+
+                        if (request.getMaterialCost() != null) {
+                            materialCharges = Double.parseDouble(request.getMaterialCost());
+
+                        } else {
+                            materialCharges = 0;
+                        }
+
+                            /*
+                            if(request.getTotalCost() != null){
+                                mTotalCost.setText(String.format( "$%.2f", Double.parseDouble(request.getTotalCost())));
+                            }
+                            */
+
+                        Double mTotalCostTemp = driveTimeCharges + laborTimeCharges + materialCharges;
+
+                        mTotalCost.setText(String.format("$%.2f", mTotalCostTemp));
+
+                    } catch (NumberFormatException e) {
+                        e.printStackTrace();
                     }
-
-
-                    mLaborChronometer.setBase(SystemClock.elapsedRealtime() + currentLabourTime);
-                    // mLaborChronometer.start();
-                    // mLaborChronometer.stop();
-
-                    Log.d("TESTEST1", request.getTotalCost());
-
-                    Log.d("TESTEST2", String.format("$%.2f", 0.67));
-
-
-                    if (request.getDriveTimeCost() != null) {
-                        driveTimeCharges = Double.parseDouble(request.getDriveTimeCost());
-                        mDriveTotal.setText(String.format("$%.2f", driveTimeCharges));
-                    } else {
-                        driveTimeCharges = 0;
-                    }
-
-                    if (request.getLaborTimeCost() != null) {
-                        laborTimeCharges = Double.parseDouble(request.getLaborTimeCost());
-                        mLaborTotal.setText(String.format("$%.2f", laborTimeCharges));
-                    } else {
-                        laborTimeCharges = 0;
-                    }
-
-                    if (request.getMaterialCost() != null) {
-                        materialCharges = Double.parseDouble(request.getMaterialCost());
-
-                    } else {
-                        materialCharges = 0;
-                    }
-
-                    /*
-                    if(request.getTotalCost() != null){
-                        mTotalCost.setText(String.format( "$%.2f", Double.parseDouble(request.getTotalCost())));
-                    }
-                    */
-
-                    Double mTotalCostTemp = driveTimeCharges + laborTimeCharges + materialCharges;
-                    // Double mTotalCostTemp = driveTimeCharges + laborTimeCharges;
-
-                    mTotalCost.setText(String.format("$%.2f", mTotalCostTemp));
                 }
 
             }
@@ -922,7 +953,7 @@ public class StartJobActivity extends AppCompatActivity implements View.OnClickL
                 long timeElapsed = dt_timeWhenStopped;
                 request.setDriveTime(timeElapsed + "");
 
-                if (timeElapsed < 0) {
+                if(timeElapsed <0){
                     timeElapsed = timeElapsed * -1;
                 }
                 int hours = (int) (timeElapsed / 3600000);
@@ -931,10 +962,11 @@ public class StartJobActivity extends AppCompatActivity implements View.OnClickL
                     minutes = minutes * -1;
                 }
 
-                driveTimeCharges = (double) ((hours * 60) + minutes) * 0.67;
+                driveTimeCharges = (double) ((hours * 60) + minutes )* 0.67;
                 //driveTimeCharges = (double)  minutes * 0.67;
 
                 totalCharges = driveTimeCharges + laborTimeCharges + materialCharges;
+
 
 
                 Log.d("driveTimeCharges", String.format("%.02f", driveTimeCharges));
@@ -1121,6 +1153,8 @@ public class StartJobActivity extends AppCompatActivity implements View.OnClickL
     }
 
 
+
+
     private void showMessageOKCancel(String message, DialogInterface.OnClickListener okListener) {
         new AlertDialog.Builder(StartJobActivity.this)
                 .setMessage(message)
@@ -1171,6 +1205,7 @@ public class StartJobActivity extends AppCompatActivity implements View.OnClickL
         }
 
     }
+
 
 
 }

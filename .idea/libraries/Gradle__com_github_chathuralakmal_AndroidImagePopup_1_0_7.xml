@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.chathuralakmal:AndroidImagePopup-1.0.7">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/AndroidImagePopup-1.0.7.aar/06b19ac3e5b8ff4951886d9b2cc5000b/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/AndroidImagePopup-1.0.7.aar/06b19ac3e5b8ff4951886d9b2cc5000b/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/AndroidImagePopup-1.0.7.aar/d90307d7bbd7ba5f90adf25ff8c9a9ef/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/AndroidImagePopup-1.0.7.aar/d90307d7bbd7ba5f90adf25ff8c9a9ef/jars/classes.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

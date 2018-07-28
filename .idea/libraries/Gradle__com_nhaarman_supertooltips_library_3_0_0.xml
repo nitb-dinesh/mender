@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.nhaarman.supertooltips:library-3.0.0">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-3.0.0.aar/e0757cbfad108e920920130884286995/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-3.0.0.aar/e0757cbfad108e920920130884286995/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-3.0.0.aar/8e74cebc5045f19efd4097e3b4ed517f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/library-3.0.0.aar/8e74cebc5045f19efd4097e3b4ed517f/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

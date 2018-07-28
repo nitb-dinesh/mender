@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/aleeshak-mender-upwork-e67b2cf5c6ba.iml" filepath="$PROJECT_DIR$/aleeshak-mender-upwork-e67b2cf5c6ba.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/trackerM.iml" filepath="$PROJECT_DIR$/trackerM.iml" />
     </modules>
   </component>
 </project>

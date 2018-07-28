@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.yesidlazaro:GmailBackground-1.2.0">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/GmailBackground-1.2.0.aar/120b3fedbc8e603a3e5622a78ee4d317/jars/libs/mail.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/GmailBackground-1.2.0.aar/120b3fedbc8e603a3e5622a78ee4d317/jars/libs/activation.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/GmailBackground-1.2.0.aar/120b3fedbc8e603a3e5622a78ee4d317/jars/classes.jar!/" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/GmailBackground-1.2.0.aar/120b3fedbc8e603a3e5622a78ee4d317/jars/libs/additionnal.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/GmailBackground-1.2.0.aar/120b3fedbc8e603a3e5622a78ee4d317/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/GmailBackground-1.2.0.aar/c712ab7c4f5543f2d08caabaebdfbc44/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/GmailBackground-1.2.0.aar/c712ab7c4f5543f2d08caabaebdfbc44/jars/libs/mail.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/GmailBackground-1.2.0.aar/c712ab7c4f5543f2d08caabaebdfbc44/jars/libs/additionnal.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/GmailBackground-1.2.0.aar/c712ab7c4f5543f2d08caabaebdfbc44/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/GmailBackground-1.2.0.aar/c712ab7c4f5543f2d08caabaebdfbc44/jars/libs/activation.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
