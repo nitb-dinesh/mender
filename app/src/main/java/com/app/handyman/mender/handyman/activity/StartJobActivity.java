@@ -524,10 +524,7 @@ public class StartJobActivity extends AppCompatActivity implements View.OnClickL
 
         txtPhoneNum = (TextView) dialog.findViewById(R.id.txtPhoneNum);
         txtPhoneNum.setTypeface(myCustomFont);
-
-
 //
-
         txtAddress = (TextView) dialog.findViewById(R.id.txtAddress);
         txtAddress.setText(request.getAddress());
         txtAddress.setTypeface(myCustomFont);

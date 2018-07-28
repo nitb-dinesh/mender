@@ -333,5 +333,21 @@
     <string name="msg_unsubscribed">New job notification off</string>
     <string name="msg_unsubscribe_failed">unsubscribe failed</string>
 
+    <string name="billing">Billing</string>
+    <string name="job_title0">Job Title</string>
+    <string name="_123_easy_st">123 Easy st.</string>
+    <string name="contact_info">Contact Info:</string>
+    <string name="tenant_name">Tenant Name</string>
+    <string name="wa1001_966">WA1001-966</string>
+    <string name="work_order">Work Order #</string>
+    <string name="drive_time">Drive Time</string>
+    <string name="labor_time">Labor Time</string>
+    <string name="job_details">Job Details:</string>
+    <string name="charges">Charges</string>
+    <string name="_00_00">$00.00</string>
+    <string name="save">Save</string>
+    <string name="this_is_for_receipt_images">This is for receipt images.</string>
+
+
 
 </resources>

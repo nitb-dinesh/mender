@@ -45,7 +45,7 @@ public class RequestsAdapter extends RecyclerView.Adapter<RequestsAdapter.RV_Vie
     DatabaseReference mRootReference = FirebaseDatabase.getInstance().getReference();
     DatabaseReference requestsReference = mRootReference.child("Requests");
 
-    public RequestsAdapter(Context context, ArrayList<Request> requestList) {
+    public  RequestsAdapter(Context context, ArrayList<Request> requestList) {
         this.mContext = context;
         this.requestList = requestList;
         icon_manager = new Icon_Manager();

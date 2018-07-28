@@ -51,17 +51,7 @@ import static com.app.handyman.mender.R.id.image2;
 
 public class AdminJobDetailsActivity extends AppCompatActivity {
 
-/*   @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_job_details);
-    }*/
 
-    /*  @Override
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            setContentView(R.layout.activity_admin_job_details);
-        }*/
 
     private static final String TAG = AdminJobDetailsActivity.class.getSimpleName();
 
@@ -568,6 +558,8 @@ public class AdminJobDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_job_details);
 
+        initUI();
+
         try {
             mRootReference = FirebaseDatabase.getInstance().getReference();
             jobDetailsReference = mRootReference.child("Requests");
@@ -585,6 +577,17 @@ public class AdminJobDetailsActivity extends AppCompatActivity {
             e.printStackTrace();
         }
 
+    }
+
+    private void initUI() {
+        (findViewById(R.id.edit_request)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AdminJobDetailsActivity.this, AdminJobEditActivity.class);
+                intent.putExtra("id", jobId);
+                startActivity(intent);
+            }
+        });
     }
 
 

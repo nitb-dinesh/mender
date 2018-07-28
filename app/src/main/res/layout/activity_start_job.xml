@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroundsplit"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -21,7 +22,8 @@
             android:layout_marginLeft="10dp"
             android:layout_weight="1"
             android:padding="5dp"
-            android:text="Total Charges:"
+            android:text="Work Timer"
+            android:textAlignment="center"
             android:textColor="@color/primary_light_text_color"
             android:textSize="22sp" />
 
@@ -35,159 +37,57 @@
             android:text="$00.00"
             android:textColor="@color/primary_light_text_color"
             android:textSize="22sp"
-            android:visibility="visible" />
+            android:visibility="gone" />
 
     </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#ccc" />
-
 
     <!-- Start of Driving Time Layout -->
     <LinearLayout
         android:id="@+id/drive_time_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight=".5"
         android:orientation="vertical">
 
         <LinearLayout
             android:id="@+id/lin_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp"
             android:orientation="horizontal"
             android:weightSum="2">
 
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/colorPrimary"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="10dp"
-                android:weightSum="2">
-
-                <TextView
-                    android:id="@+id/drivetime1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Drive Time:"
-                    android:textColor="@color/primary_text_color" />
-
-                <Chronometer
-                    android:id="@+id/drive_chronometer"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:gravity="center"
-                    android:textColor="@color/primary_text_color"
-                    android:textSize="28sp" />
-
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="1dp"
-                android:layout_height="100dp"
-                android:background="@color/primary_text_color" />
-
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:background="@color/colorPrimary"
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="10dp"
+                android:visibility="gone"
                 android:weightSum="2">
 
                 <TextView
                     android:id="@+id/mcharges"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
                     android:gravity="center"
                     android:text="Charges"
-                    android:textColor="@color/primary_text_color" />
+                    android:textColor="@color/primary_light_text_color" />
 
                 <TextView
                     android:id="@+id/drive_total"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="40dp"
                     android:gravity="center"
                     android:text="$00.00"
-                    android:textColor="@color/primary_text_color"
+                    android:textColor="@color/primary_light_text_color"
                     android:textSize="28sp" />
 
             </LinearLayout>
-
-        </LinearLayout>
-
-        <View
-            android:id="@+id/view_1"
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@color/primary_text_color" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:orientation="vertical"
-            android:padding="5dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="5dp"
-                android:background="@color/colorPrimary"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="10dp"
-                android:weightSum="3">
-
-                <Button
-                    android:id="@+id/dt_play"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/sharpcorners"
-                    android:text="Start"
-                    android:textColor="@color/primary_text_color" />
-
-                <Button
-                    android:id="@+id/dt_pause"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/sharpcorners"
-                    android:text="Stop"
-                    android:textColor="@color/primary_text_color" />
-
-                <Button
-                    android:id="@+id/dt_reset"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@drawable/sharpcorners"
-                    android:gravity="center"
-                    android:text="Resettttttt"
-                    android:textColor="@color/primary_text_color" />
-
-            </LinearLayout>
-
-            <View
-                android:id="@+id/view_2"
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="15dp"
-                android:background="@color/black" />
 
         </LinearLayout>
 
@@ -195,20 +95,20 @@
     </LinearLayout>  <!-- End of Driving Time Layout -->
 
     <!-- Start of Labor Time Layout -->
+
     <LinearLayout
         android:id="@+id/labor_time_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_weight=".5"
-        android:orientation="vertical"
-        android:visibility="gone">
+        android:orientation="vertical">
 
         <LinearLayout
             android:id="@+id/lin_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="2">
+            android:weightSum="10">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -218,41 +118,7 @@
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="10dp"
-                android:weightSum="2">
-
-                <TextView
-                    android:id="@+id/labortime1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Labor Time:"
-                    android:textColor="@color/primary_text_color" />
-
-                <Chronometer
-                    android:id="@+id/labor_chronometer"
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:gravity="center"
-                    android:textColor="@color/primary_text_color"
-                    android:textSize="28sp" />
-
-
-            </LinearLayout>
-
-            <View
-                android:layout_width="1dp"
-                android:layout_height="100dp"
-                android:background="@color/primary_text_color" />
-
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/colorPrimary"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="10dp"
+                android:visibility="gone"
                 android:weightSum="2">
 
                 <TextView
@@ -260,97 +126,224 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Charges"
-                    android:textColor="@color/primary_text_color" />
+                    android:text="@string/charges"
+                    android:textColor="@color/primary_text_color"
+                    android:visibility="gone" />
 
                 <TextView
                     android:id="@+id/labor_total"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
                     android:gravity="center"
-                    android:text="$00.00"
+                    android:text="@string/_00_00"
                     android:textColor="@color/primary_text_color"
-                    android:textSize="28sp" />
+                    android:textSize="28sp"
+                    android:visibility="gone" />
 
             </LinearLayout>
 
         </LinearLayout>
 
-        <View
-            android:id="@+id/view_4"
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:background="@color/primary_text_color" />
+
+    </LinearLayout> <!-- End of Labor Time Layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:orientation="vertical"
-            android:padding="5dp">
+            android:background="@color/colorAccent"
+            android:gravity="bottom|center"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="2">
 
-
-            <LinearLayout
+            <TextView
+                android:id="@+id/labortime1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="5dp"
-                android:background="@color/colorPrimary"
+                android:layout_height="wrap_content"
+
                 android:gravity="center"
-                android:orientation="horizontal"
-                android:padding="10dp"
-                android:weightSum="3">
+                android:text="@string/labor_time"
+                android:layout_weight="1"
+                android:textColor="@color/primary_light_text_color"
+                android:textSize="18sp" />
 
-                <Button
-                    android:id="@+id/lt_play"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/sharpcorners"
-                    android:text="Start"
-                    android:textColor="@color/primary_text_color" />
-
-                <Button
-                    android:id="@+id/lt_pause"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/sharpcorners"
-                    android:text="Stop"
-                    android:textColor="@color/primary_text_color" />
-
-                <Button
-                    android:id="@+id/lt_reset"
-                    android:layout_width="0dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:background="@drawable/sharpcorners"
-                    android:gravity="center"
-                    android:text="Reset"
-                    android:textColor="@color/primary_text_color" />
-
-            </LinearLayout>
-
-            <View
+            <TextView
+                android:id="@+id/drivetime1"
                 android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:layout_marginTop="15dp"
-                android:background="@color/primary_text_color" />
+                android:layout_height="wrap_content"
+                android:text="@string/drive_time"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:paddingRight="30dp"
+                android:textColor="@color/primary_light_text_color"
+                android:textSize="18sp" />
+
 
         </LinearLayout>
 
-    </LinearLayout> <!-- End of Labor Time Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:weightSum="2">
 
 
+            <Chronometer
+                android:id="@+id/labor_chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="150dp"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:textColor="@color/primary_light_text_color"
+                android:textSize="40sp" />
+
+            <Chronometer
+                android:id="@+id/drive_chronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="20dp"
+                android:paddingRight="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/primary_light_text_color"
+                android:textSize="40sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
     <!-- Control Layout -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="6"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="4"
+        android:gravity="bottom"
         android:orientation="vertical"
-        android:weightSum="2">
+        android:weightSum="20">
+
+
+        <!-- Labor Time Start Stop -->
+
+        <LinearLayout
+            android:id="@+id/labortimestartstop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/lt_play"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/sharpcorners4"
+                android:drawableTop="@drawable/playblackandblue"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:text="Start"
+                android:textColor="@color/primary_text_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/lt_pause"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/sharpcorners4"
+                android:drawableTop="@drawable/pauseblack"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:text="Pause"
+                android:textColor="@color/primary_text_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/lt_reset"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/sharpcorners4"
+                android:drawableTop="@drawable/playblackandblue"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:text="Start"
+                android:textColor="@color/primary_text_color"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <!-- Drive Time Start Stop -->
+
+        <LinearLayout
+            android:id="@+id/drivetimestartstop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/dt_play"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/sharpcorners4"
+                android:drawableTop="@drawable/playblackandblue"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:text="Start"
+                android:textColor="@color/primary_text_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/dt_pause"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/sharpcorners4"
+                android:drawableTop="@drawable/pauseblack"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:text="Pause"
+                android:textColor="@color/primary_text_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/dt_reset"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone" />
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -362,34 +355,37 @@
             android:weightSum="2">
 
             <Button
-                android:id="@+id/drive_time_button"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/sharpcorners"
-                android:drawableTop="@drawable/delivery"
-                android:padding="10dp"
-                android:text="Drive Time"
-                android:elevation="10dp"
-                android:textColor="@color/colorAccent"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <Button
                 android:id="@+id/labor_time_button"
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/sharpcorners"
-                android:drawableTop="@drawable/hammers"
+                android:background="@drawable/sharpcorners4"
+                android:drawableTop="@drawable/blackandbluehammer"
+                android:elevation="5dp"
                 android:padding="10dp"
                 android:text="Labor Time"
                 android:textColor="@color/primary_text_color"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
+            <Button
+                android:id="@+id/drive_time_button"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/sharpcorners4"
+                android:drawableTop="@drawable/blackandbluetruck"
+                android:elevation="5dp"
+                android:padding="10dp"
+                android:text="@string/drive_time"
+                android:textColor="@color/primary_text_color"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
         </LinearLayout>
 
         <LinearLayout
@@ -398,18 +394,19 @@
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_weight="1"
+            android:gravity="center"
             android:orientation="horizontal"
             android:weightSum="2">
 
             <Button
                 android:id="@+id/receipts_button"
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="100dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:background="@drawable/sharpcorners"
-                android:drawableTop="@drawable/receipts"
-                android:padding="10dp"
+                android:background="@drawable/sharpcorners4"
+                android:drawableTop="@drawable/receiptblueandblack"
+                android:elevation="5dp"
                 android:text="Receipts"
                 android:textColor="@color/primary_text_color"
                 android:textSize="16sp"
@@ -418,12 +415,14 @@
             <Button
                 android:id="@+id/job_info_button"
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="100dp"
                 android:layout_margin="5dp"
+                android:layout_marginBottom="10dp"
                 android:layout_weight="1"
-                android:background="@drawable/sharpcorners"
-                android:drawableTop="@drawable/infosmall"
-                android:padding="10dp"
+                android:background="@drawable/sharpcorners4"
+                android:drawableTop="@drawable/informationblueandblack"
+                android:elevation="5dp"
+                android:padding="5dp"
                 android:text="Job Info"
                 android:textColor="@color/primary_text_color"
                 android:textSize="16sp"
@@ -434,7 +433,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_weight="1"
@@ -444,33 +442,32 @@
             <Button
                 android:id="@+id/end_job_button"
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
-                android:alpha=".5"
-                android:background="@drawable/sharpcorners"
-                android:drawableTop="@drawable/stop"
+                android:background="@drawable/sharpcorners4"
+                android:drawableTop="@drawable/stopsignblueandblack"
+                android:elevation="5dp"
                 android:padding="10dp"
                 android:text="End Job"
                 android:textColor="@color/primary_text_color"
-                android:textSize="17sp"
-                android:textStyle="bold" />
+                android:textSize="17sp" />
 
             <Button
                 android:id="@+id/incomplete_job_button"
                 android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
-                android:alpha=".5"
-                android:background="@drawable/sharpcorners"
-                android:drawableTop="@drawable/incomplete"
+                android:background="@drawable/sharpcorners4"
+                android:drawableTop="@drawable/incompleteblackandblue"
+                android:elevation="5dp"
                 android:padding="10dp"
-                android:text="Incomplete Job"
+                android:text="Incomplete"
                 android:textColor="@color/primary_text_color"
                 android:textSize="15sp" />
 

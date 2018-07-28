@@ -40,6 +40,19 @@
                     android:layout_gravity="center"
                     android:layout_marginLeft="12dp"
                     android:src="@drawable/back_arrow" />
+
+                <ImageView
+                    android:id="@+id/edit_request"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/ic_edit_white_48dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp" />
+
+
+
             </RelativeLayout>
 
             <ScrollView
@@ -676,7 +689,8 @@
                                 android:layout_marginRight="30dp"
                                 android:background="@drawable/sharpcorners"
                                 android:text="Restart Job"
-                                android:textColor="@color/primary_text_color" />
+                                android:textColor="@color/primary_text_color"
+                                android:visibility="gone"/>
                         </LinearLayout>
                     </android.support.v7.widget.CardView>
 
